@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@800&display=swap');
+
+* {
+    font-family: 'Biryani', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#333), to(#454141));
+    background-image: -o-linear-gradient(top, #333 0%, #454141 100%);
+    background-image: linear-gradient(to bottom, #333 0%, #454141 100%);
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+p {
+    font-size: 40px;
+}
+
+td {
+    background-color: transparent;
+    height: 70px;
+    width: 70px;
+}
+
+td,
+.inner,
+.front,
+.back {
+    border-radius: 4px;
+}
+
+td,
+th {
+    padding: 0.1rem;
+}
+
+#inst {
+    background-color: #333;
+    text-align: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 0.2px solid #ffff;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+#instNew {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 0.2px solid #ffff;
+    border-radius: 10px;
+}
+
+#inst li {
+    text-align: left;
+    padding: 5px;
+}
+
+#restartButton {
+    display: none;
+}
+
+button {
+    background-color: #333;
+    -webkit-backdrop-filter: (20px);
+    backdrop-filter: (20px);
+    color: white;
+    margin: 5px;
+    border: 0.1px solid #ffff;
+    border-radius: 10px;
+    font-weight: smaller;
+    width: 100px;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #908f8f;
+}
+
+#ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-color: #454141;
+    color: white;
+    -webkit-backdrop-filter: blur(1.5rem);
+    backdrop-filter: blur(1.5rem);
+    z-index: 2;
+
+}
+
+
+
+#title {
+    background-color: rgba(255, 255, 255, 0.25);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    width: 50vw;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+#heading {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+
+
+#logo {
+    font-size: 22px;
+    padding-top: 10px;
+    display: block;
+}
+
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    -webkit-transition: -webkit-transform 0.8s;
+    transition: -webkit-transform 0.8s;
+    -o-transition: transform 0.8s;
+    transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.front {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.back {
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.footer-box {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    margin: 0 auto; 
+}
+.footer-box a {
+    color: #0d97dc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-box a:hover {
+    color: #333; /* Change color on hover */
+}
+
+@media screen and (max-width: 600px) {
+    .footer-box {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+button:hover,
+button:active {
+    outline: 0;
+}
+
+#tableHolder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 65vh;
+    gap: 0.5rem;
+}
